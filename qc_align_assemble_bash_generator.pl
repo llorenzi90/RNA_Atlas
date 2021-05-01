@@ -62,6 +62,6 @@ foreach (@fastq_folders){
 open(my $fh, '>', 'qc_align_assemble.sh');
 print $fh join("\n",@commands);
 close $fh;
-system("chmod 577 ./qc_align_assemble.sh")
+system("chmod +x ./qc_align_assemble.sh")
 system("./qc_align_assemble.sh")
 
